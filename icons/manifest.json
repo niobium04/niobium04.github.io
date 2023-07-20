@@ -1,5 +1,10 @@
 {
- "name": "App",
+"name": "ZhulCars",
+"description": "салон премиальных автомобилей",
+"start_url": "/",
+"lang": "ru",
+"display": "standalone",
+
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
