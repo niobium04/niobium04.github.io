@@ -1,0 +1,183 @@
+body {
+  font-family: 'Fira Mono Bold', arial;
+
+}
+
+header {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+#intro {
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 250px;
+  color: #fff;
+  text-align: left;
+  
+}
+
+#intro h2 {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+#catalog {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.car {
+  display: inline-block;
+  margin: 10px;
+}
+
+.car {
+  border: 1px solid lightgray;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.car img {
+  width: 400px;
+  height: 250px;
+}
+
+.price {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.contact-btn {
+  margin-top: 10px;
+}
+
+#contact-modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #82daff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center
+}
+
+#contact-modal form input {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+
+}
+
+#contact-modal form button {
+  margin-top: 10px;
+}
+
+.contact-btn {
+    background-color: #1a237e;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+button[type="submit"] {
+  font-size: 20px;
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+}
+
+input[type="text"],
+input[type="tel"] {
+  width: 300px;
+  height: 25px;
+}
+
+
+section {
+  text-align: center;
+}
+
+h2, p {
+  margin: 10px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #FF0000;
+  color: #FFF;
+  border: none;
+  cursor: pointer;
+}
+
+#question {
+  background-image: url(background1.png);
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  color: #fff;
+  text-align: center
+
+
+.map {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 35px;
+    font-family: 'Fira Mono Bold', arial;
+    margin-bottom: 20px;
+}
+
+
+
+

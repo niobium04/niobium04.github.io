@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="ico.svg">
+    <link href="https://allfont.ru/allfont.css?fonts=fira-mono-bold" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css"> 
+	<script src='cript.js'></script>
+    <title>ZhulCars - салон премиальных автомобилей</title>
+  </head>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+     window.addEventListener('load', function() {  
+       navigator.serviceWorker.register('/sw.js').then(
+         function(registration) {
+           // Registration was successful
+           console.log('ServiceWorker registration successful with scope: ', registration.scope); },
+         function(err) {
+           // registration failed :(
+           console.log('ServiceWorker registration failed: ', err);
+         });
+     });
+    }
+    </script>
+  
+  <body>
+  <header>
+	<img src="images/logo.png" alt="logo">
+    <nav>
+      <ul>
+        <li><a href="#about"><b><font size="5">О нас<font></b></a></li>
+        <li><a href="#contacts"><b>Контакты</b></a></li>
+        <li><a href="#place"><b>Как нас найти?</b></a><br></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="intro">
+  </section>
+  
+  <section id="catalog">
+  <font size="18">Выбери свой автомобиль</font><br><br>
+   <div class="car">
+      <img src="images/aventador.png" alt="Lamborghini Aventador">
+      <h3>Lamborghini Aventador</h3>
+	  <h4>6.5 л / 740 л.с. / Бензин<br>Роботизированная<br>2018г.</h4>
+      <p class="price">Цена: 32 500 000 ₽</p>
+      <button class="contact-btn">Получить предложение</button>
+    </div>
+	<div class="car">
+      <img src="images/camry.png" alt="Toyora Camry">
+  <h3>Toyota Camry</h3>
+  <h4>2.5 л / 209 л.с. / Бензин<br>Автоматическая<br>2022г.</h4>
+      <p class="price">Цена: 3 550 000 ₽</p>
+      <button class="contact-btn">Получить предложение</button>
+    </div>
+    <div class="car">
+      <img src="images/911.png" alt="Porsche 911 Turbo S">
+      <h3>Porsche 911 Turbo S</h3>
+	  <h4>3.8 л / 580 л.с. / Бензин<br>Роботизированная<br> 2017г.</h4>
+      <p class="price">Цена: 12 500 000 ₽</p>
+      <button class="contact-btn">Получить предложение</button>
+    </div>
+    <div class="car">
+      <img src="images/m2.png" alt="BMW M2 Coupe">
+      <h3>BMW M2 Coupe </h3>
+	  <h4>3.0 л / 410 л.с. / Бензин<br>Роботизированная<br> 2020г.</h4>
+      <p class="price">Цена: 5 790 000 ₽</p>
+      <button class="contact-btn">Получить предложение</button>
+    </div>
+	<div class="car">
+      <img src="images/amg.jpg" alt="Mercedes AMG C63S">
+      <h3>Mercedes AMG C63S</h3>
+	  <h4>4.0 л / 510 л.с. / Бензин<br>Автоматическая<br> 2018г.</h4>
+      <p class="price">Цена: 5 750 000 ₽</p>
+      <button class="contact-btn">Получить предложение</button>
+    </div>
+	<div class="car">
+      <img src="images/brabus.jpg" alt="Mercedes-Benz G-Класс AMG Brabus 800">
+  <h3>Mercedes-Benz AMG Brabus 800</h3>
+  <h4>4.0 л / 800 л.с. / Бензин<br>Автоматическая<br> 2019г.</h4>
+      <p class="price">Цена: 24 500 000 ₽</p>
+      <button class="contact-btn">Получить предложение</button>
+    </div>
+    <div class="car">
+      <img src="images/ghost.jpg" alt="Rolls-Royce Ghost II">
+      <h3>Rolls-Royce Ghost II</h3>
+	  <h4>6.8 л / 571 л.с. / Бензин<br>Автоматическая<br> 2021г.</h4>
+      <p class="price">Цена: 36 100 000 ₽</p>
+      <button class="contact-btn">Получить предложение</button>
+    </div>
+    <div class="car">
+      <img src="images/g70.png" alt="Genesis G70 I">
+      <h3>Genesis G70 I</h3>
+	  <h4>3.0 л / 286 л.с. / Дизель<br>Автоматическая<br> 2018г.</h4>
+      <p class="price">Цена: 5 630 000 ₽</p>
+      <button class="contact-btn">Получить предложение</button>
+    </div>
+	<div class="car">
+      <img src="images/x5.jpeg" alt="BMW X5 30d">
+      <h3>BMW X5 30d</h3>
+	  <h4>2.0 л / 247 л.с. / Бензин<br>Автоматическая<br> 2022г.</h4>
+      <p class="price">Цена: 10 530 000 ₽</p>
+      <button class="contact-btn">Получить предложение</button>
+    </div>
+	<div class="car">
+      <img src="images/rover.png" alt="Land Rover Range Rover Evoque">
+      <h3>Range Rover Evoque</h3>
+	  <h4>2.0 л / 240 л.с. / Дизель<br>Автоматическая<br> 2020г.</h4>
+      <p class="price">Цена: 5 055 000 ₽</p>
+      <button class="contact-btn">Получить предложение</button>
+    </div>
+	<div class="car">
+      <img src="images/tesla.jpg" alt="Tesla Model X Performance">
+      <h3>Tesla Model X Performance</h3>
+	  <h4>795 л.с. / 585 кВт / Электро<br>Автоматическая<br> 2019г.</h4>
+      <p class="price">Цена: 7 355 000 ₽</p>
+      <button class="contact-btn">Получить предложение</button>
+    </div>
+
+  </section>
+  
+  
+  
+  <div id="contact-modal" class="modal">
+      <span class="close">&times;</span>
+    <form>
+      <h2>Заполните заявку <br>на обратную связь</h2>
+	  <h3>Перезвоним в течение <b>5</b> минут </h3>
+      <label for="name">Имя:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="phone">Номер телефона:</label>
+      <input type="tel" class="phone" required>
+	  <input type="checkbox" name="call" required><font size="2">я даю согласие на обработку <br> персональных данных и <br> обратный звонок</font><br>
+      <button type="submit">Отправить</button>
+    </form>
+  </div>
+  
+  <br><br><br>
+  
+  <section id=question>
+  <font size="8">Есть вопросы?</font><br>
+  <font size="6">Мы свяжемся с Вами!</font>
+
+  <form id="contact-form">
+  <br>
+    <label for="name-input">Ваше имя:</label>
+    <input type="text" id="name-input" required>
+    
+    <label for="phone">Номер телефона:</label>
+      <input type="tel" class="phone" required>
+    
+    <button type="submit">Отправить</button>
+  </form>
+  
+  <p>Нажимая кнопку «Отправить» я подтверждаю свое ознакомление с порядком обработки персональных данных со стороны ZhulCars и даю свободное и осознанное согласие на их обработку, на получение информации по каналам связи, в том числе в рекламных целях.</p>
+
+</section>
+<br>
+<hr>
+<section class="about">
+<h1 id="about">О нас</h1>
+	<div style="width: 100%;overflow:auto;">
+    <div style="float:left; width: 60%">
+	<br><br><span style="font-size:28px; color:blue">МЫ МОЛОДЫ И АМБИЦИОЗНЫ</span><br>
+	<font size="4px">Наша компания придает большое значение своей репутации и стремится к ее укреплению. Мы осознаем важность доверия и уверены, что это является фундаментом успешного бизнеса. Поэтому, прежде чем разместить любой автомобиль на нашей площадке, мы проводим тщательную проверку его технического и юридического состояния.
+<br><br>В отношении технической проверки автомобиля, мы обращаем внимание на его механическое состояние, исправность всех систем и агрегатов, наличие пробега и истории обслуживания. Мы работаем с опытными механиками и экспертами, которые способны выявить любые скрытые проблемы или потенциальные неисправности и устранить их до того, как автомобиль будет предложен покупателям.</font><br>
+    </div>
+    <div style="float:right;">
+	<img src="images/seller.jpg" alt="Mercedes AMG C63S">
+    </div>
+</div>
+<br>
+	<div style="width: 100%;overflow:auto;">
+    <div style="float:right; width: 60%">
+	<br><br><span style="font-size:28px; color:blue">СИЛЬНАЯ КОМАНДА</span><br>
+	<font size="4px">В нашей компании у нас работают команда квалифицированных менеджеров, которые обладают огромным опытом в сфере автопродаж. Эти специалисты имеют глубокие знания о продаже автомобилей и обладают навыками, которые являются ключевыми для успешного выполнения своих обязанностей.
+<br><br>Наши менеджеры прошли специальную тренировку, которая помогла им получить все необходимые знания и навыки для эффективной работы в сфере автопродаж. Они обладают полным пониманием процесса продажи автомобилей, от привлечения клиентов и проведения тест-драйвов до оформления документации и конечного заключения сделки.</font><br>
+	</div>
+    <div style="float:left;">
+	<img src="images/seller2.jpg" alt="Mercedes AMG C63S">
+    </div>
+</div>
+<br>
+<div style="width: 100%;overflow:auto;">
+    <div style="float:left; width: 60%">
+	<br><br><span style="font-size:28px; color:blue">ПРОЗРАЧНЫЕ ЦЕНЫ</span><br>
+	<font size="4px">Вы можете быть уверены, что цена, которую вы видите, является окончательной и не будет никаких изменений в процессе покупки или оформления сделки. Мы стараемся предоставить ясную и прозрачную информацию о стоимости автомобиля, чтобы вы были уверены в своем выборе и могли планировать свои финансы соответствующим образом.
+	<br><br>Мы ценим доверие наших клиентов и стремимся обеспечить простоту и надежность в процессе приобретения автомобиля. Нашей целью является предоставление ясной информации о ценах, чтобы вы могли принять осознанное решение и с уверенностью купить автомобиль по указанной цене, без каких-либо дополнительных расходов.</font><br>
+	</div>
+    <div style="float:right;">
+	<img src="images/open.jpg" alt="Mercedes AMG C63S">
+    </div>
+</div>
+<br>
+<div style="width: 100%;overflow:auto;">
+    <div style="float:right; width: 60%">
+	<br><span style="font-size:28px; color:blue">ПАРТНЁРСКИЕ ПРОГРАММЫ</span><br>
+	<font size="4px">Наша компания предоставляет услуги автокредитования, лизинга и страхования для крупнейших российских компаний. Мы являемся партнерами и работаем в тесном сотрудничестве с профильными сервисами, которые занимаются постпродажным и постгарантийным обслуживанием автомобилей таких марок, как Jeep, Toyota и Lexus.
+<br><br>Мы предлагаем клиентам удобные условия и гибкие планы погашения, чтобы помочь им приобрести автомобиль своей мечты или совершить выгодную сделку с помощью лизинга. В качестве партнера для страхования автомобилей мы предлагаем комплексные программы страхования, которые позволяют клиентам чувствовать себя защищенными и обеспечеными.</font><br>
+	</div>
+    <div style="float:left;">
+	<img src="images/seller3.jpg" alt="Mercedes AMG C63S">
+    </div>
+</div>
+<br>
+<div style="width: 100%;overflow:auto;">
+    <div style="float:left; width: 60%">
+	<br><br><br><span style="font-size:28px; color:blue">ИНДИВИДУАЛЬНЫЙ ПОДХОД К КАЖДОМУ КЛИЕНТУ</span><br>
+	<font size="4px">Мы уделяем особое внимание каждому нашему клиенту и стремимся обеспечить максимально комфортное и приятное сотрудничество. У нас вы найдете профессиональных сотрудников, которые всегда готовы помочь вам с любыми вопросами и проблемами. Мы гарантируем качество наших услуг и стремимся к полному удовлетворению потребностей и ожиданий клиентов.<br><br>Мы предлагаем гибкие условия сотрудничества, такие как индивидуальные скидки, бесплатную доставку или расширенные гарантийные обязательства, чтобы наши клиенты могли насладиться дополнительными преимуществами и удовлетворить свои потребности по максимуму.</font><br>
+	</div>
+    <div style="float:right;">
+	<img src="images/carr.png" alt="Mercedes AMG C63S">
+    </div>
+</div>
+<br>
+</section>
+  
+  
+<hr>
+<section class="contacts">
+<h1 id="contacts">Контакты</h1>
+<div style="width: 100%;overflow:auto;">
+    <div style="float:left; width: 50%">
+	<br><br><font size="4px">Мы усердно работаем над тем, чтобы установить более прямую связь с нашими клиентами и быть ближе к вам. В связи с этим, мы рады сообщить о возможности напрямую связаться с генеральным директором нашего автосалона.
+<br><br>Наши клиенты - наша главная ценность, и мы осознаем, что вопросы и сомнения могут возникать в процессе выбора автомобиля, его покупки и обслуживания. Чтобы облегчить вам поиск информации и убедиться, что все ваши вопросы будут точно исчерпаны, генеральный директор нашего автосалона лично готов ответить на них.
+<br><br>Вы можете связаться с генеральным директором по удобному для вас способу. Например, вы можете позвонить нашему автосалону или отправить электронное письмо с запросом о персональной встрече или консультации с генеральным директором. Мы также предоставляем возможность связаться с ним через наши официальные страницы в социальных сетях или мессенджерах</font><br>
+  <img src="images/email.png" alt="Email" width="32" height="32">
+<a href="mailto:daniil.zhulanov@yandex.ru">
+  <p style="display:inline-block;margin-left:8px;">Написать на почту</p>
+</a>
+<br>
+  <img src="images/vk.png" alt="VK" width="32" height="32">
+<a href="https://vk.com/daniaot">
+  <p style="display:inline-block;margin-left:8px;">Написать в VK</p>
+</a>
+<br>
+<img src="images/tg.png" alt="Telegram" width="32" height="32">
+<a href="https://t.me/lovelyzhulan">
+  <p style="display:inline-block;margin-left:8px;">Написать в Telegram</p>
+</a>
+<br>
+  <img src="images/tel.png" alt="Phone" width="32" height="32">
+<a href="tel:+79824420207">
+  <p style="display:inline-block;margin-left:8px;">Позвонить</p>
+</a>
+
+
+	</div>
+    <div style="float:right;">
+	<img src="images/dir.jpg" alt="Mercedes AMG C63S">
+    </div>
+</div>
+<br>
+</section>
+
+
+<br>
+<hr>
+<section class="map">
+  <h2>Как нас найти?</h2>
+  <p id="place">С 08:00 до 22:00<br>
+  +7(982)442-02-07 <br>
+  г. Москва, м. Калужская, ул. Бутлерова, д.3</p>
+    <div class="container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2250.9650402008283!2d37.52230807665928!3d55.65481699953435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54d3d9f8e6bcd%3A0x2a8ed265fc9ca4c7!2z0YPQuy4g0JHRg9GC0LvQtdGA0L7QstCwLCAzLCDQnNC-0YHQutCy0LAsIDExNzQ4NQ!5e0!3m2!1sru!2sru!4v1688627672639!5m2!1sru!2sru" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+  
+      <script src="script.js"></script>
+	  
+	  
+</body>
+
+
+
+</html>
+
+ 
