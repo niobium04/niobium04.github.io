@@ -52,5 +52,11 @@
   ],
   "splash_pages": null,
   "scopes": null,
-  "prefer_related_applications": false
+  "prefer_related_applications": false,
+  "viewport": {
+    "width": 412,
+    "height": 731,
+    "unit": "px",
+    "is_landscape": false
+  }
 }
