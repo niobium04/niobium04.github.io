@@ -4,8 +4,6 @@
   "start_url": "/",
   "lang": "ru",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#000000",
   "icons": [
     {
       "src": "/android-icon-36x36.png",
@@ -41,22 +39,8 @@
       "src": "/android-icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "density": "4.0",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "/android-icon-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png"
+      "density": "4.0"
     }
   ],
-  "splash_pages": null,
-  "scopes": null,
-  "prefer_related_applications": false,
-  "viewport": {
-    "width": 412,
-    "height": 731,
-    "unit": "px",
-    "is_landscape": false
-  }
+  "prefer_related_applications": false
 }
