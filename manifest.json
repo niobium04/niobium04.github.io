@@ -1,5 +1,6 @@
 {
   "name": "ZhulCars",
+  "short_name": "Zhul",
   "description": "салон премиальных автомобилей",
   "start_url": "/",
   "lang": "ru",
@@ -42,5 +43,7 @@
       "density": "4.0"
     }
   ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
   "prefer_related_applications": false
 }
